@@ -1,8 +1,8 @@
 import {Box,Text,Button, Image} from '@cmpsr/components';
 import Business from '../assets/Business.svg'
 import Marketing from '../assets/Marketing.svg'
-import DesignSystem from '../assets/design-system.svg'
-import ComponentCatalog from '../assets/ComponentCatalog.svg'
+import DesignSystem from '../assets/design-system.png'
+import ComponentCatalog from '../assets/ComponentCatalog.png'
 import arrowV from '../assets/arrow.svg'
 import Market from './Market'
 
@@ -14,7 +14,7 @@ const Main = () => {
 
       {/* first section */}
 
-      <Box m='30% 10%'
+      <Box m='20% 10%'
         display="flex"
         flexDirection={{
           sm: 'column-reverse',
@@ -27,13 +27,23 @@ const Main = () => {
         alignItems="center"
         justifyContent="space-around"
       >
-        <Image src={Business} alt='Business' />
+        <Image 
+        w={{
+          sm: '100%',
+          base: '100%',
+          md: '100%',
+          lg: '35%',
+          xl: '40%',
+          '2xl': '40%',
+        }}
+        src={Business} 
+        alt='Business' />
         <Box 
         w={{
           sm: '100%',
           base: '100%',
           md: '100%',
-          lg: '40%',
+          lg: '55%',
           xl: '40%',
           '2xl': '40%',
         }}
@@ -72,7 +82,7 @@ const Main = () => {
 
       {/* Second section */}
 
-      <Box m='30% 10%' 
+      <Box m='20% 10%' 
       display="flex"
       flexDirection={{
         sm: 'column',
@@ -91,7 +101,7 @@ const Main = () => {
           sm: '100%',
           base: '100%',
           md: '100%',
-          lg: '40%',
+          lg: '55%',
           xl: '40%',
           '2xl': '40%',
         }}
@@ -127,7 +137,17 @@ const Main = () => {
             </Text>
 
         </Box>
-        <Image src={Marketing} alt='Marketing' />
+        <Image 
+        w={{
+          sm: '100%',
+          base: '100%',
+          md: '100%',
+          lg: '35%',
+          xl: '40%',
+          '2xl': '40%',
+        }}
+        src={Marketing} 
+        alt='Marketing' />
       </Box>
 
       {/* Third section */}
@@ -142,8 +162,9 @@ const Main = () => {
     }}
     backgroundColor='background-page'
     >
-     <Box mb='150px' >
-        <Box textAlign='center'>
+     <Box mb='150px'>
+        <Box 
+        textAlign='center'>
           <Text 
           mb='15px'
           color='accent-default' 
@@ -169,10 +190,17 @@ const Main = () => {
           xl: 'row',
           '2xl': 'row',
         }}
-        alignItems="center"
+        alignItems="start"
+        justifyContent='space-between'
          >
-          <Box>
-            <Image src={DesignSystem} alt='design system' />
+          <Box 
+           w={{
+            lg: '60%'
+          }}
+          mr={{lg: '20px'}}>
+            <Image 
+            src={DesignSystem} 
+            alt='design system' />
             <Box mt='30px' ml='30px' w='80%'>
                 <Text
                 color='accent-default' 
@@ -196,8 +224,12 @@ const Main = () => {
                 </Text>
             </Box>
           </Box>
-          <Box>
-            <Image src={ComponentCatalog} alt='component catalog' />
+          <Box w={{
+            lg: '60%'
+          }}>
+            <Image 
+            src={ComponentCatalog} 
+            alt='component catalog' />
             <Box mt='30px' ml='30px' w='80%'>
                 <Text 
                 
