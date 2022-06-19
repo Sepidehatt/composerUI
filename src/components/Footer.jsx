@@ -55,10 +55,20 @@ const Footer = () => {
           >
             Composer is open-sourced on GitHub. You're welcome to contribute!
           </Text>
-          <Button borderRadius='99px' >Contribute on GitHub<Image src={arrowV} /></Button>
+          <Button 
+          borderRadius='99px' 
+          >
+            Contribute on GitHub
+            <Image 
+            src={arrowV} 
+            />
+            </Button>
         </Box>
         <Box m='20px 0'>
-          <Image src={Figma} alt='Figma logo' />
+          <Image 
+          src={Figma} 
+          alt='Figma logo' 
+          />
           <Text
             w={{
               sm: '90%',
@@ -74,7 +84,13 @@ const Footer = () => {
           >
             Composer is part of the Figma community. Visit us with the handle @impulsum
           </Text>
-          <Button borderRadius='99px' >Contribute on Figma<Image src={arrowV} /></Button>
+          <Button 
+          borderRadius='99px' 
+          >Contribute on Figma
+          <Image 
+          src={arrowV} 
+          />
+          </Button>
         </Box>
         <Box m='20px 0' >
           <Text
