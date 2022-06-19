@@ -29,7 +29,7 @@ const Banner = () => {
         </Box>
 
         <Box  >
-          <Button mt='32px' borderRadius='99px' ><Text padding='8px 16px' color='accent-default' textStyle='text-body-medium' >Request for free demo </Text><Image src={arrowV} /></Button>
+          <Button mt='32px' borderRadius='99px' ><Text padding='5px 12px' color='accent-default' textStyle='text-body-medium' >Request for free demo </Text><Image pr='10px' src={arrowV} /></Button>
         </Box>
       </Box>
 
@@ -67,7 +67,16 @@ const Banner = () => {
           >
           Introducing Composer - the most advanced web and landing page builder for non-programmers that helps you to speed up your digital production processes
         </Text>
-        <Button borderRadius='99px' ><Text padding='8px 16px' color='accent-default' textStyle='text-body-large-medium' >Request for free demo </Text><Image src={arrowV} /></Button>
+        <Button borderRadius='99px' >
+          <Text 
+          padding='12px 12px' 
+          color='accent-default' 
+          textStyle='text-body-large-medium' 
+          >
+            Request for free demo 
+            </Text>
+            <Image pr='10px' src={arrowV} />
+            </Button>
       </Box>
 
     </>
